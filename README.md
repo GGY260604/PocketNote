@@ -220,6 +220,44 @@ Implemented:
 
 ---
 
+# Firebase Build Configuration
+
+- Create firebase project and enable the required Firebase services (Authentication, Firestore and Firebase AI Logic) in your Firebase console and set up the appropriate configurations for needed platform (Prefer Android) to ensure proper functionality of the app.
+
+- Then, get the required keys and IDs, and fill in the following environment variables based on your platform needed in `.env.local` file at root before development and production builds:
+
+```local
+# ===== FIREBASE WEB =====
+FIREBASE_WEB_API_KEY=
+FIREBASE_WEB_APP_ID=
+FIREBASE_WEB_MESSAGING_SENDER_ID=
+FIREBASE_WEB_PROJECT_ID=
+FIREBASE_WEB_AUTH_DOMAIN=
+FIREBASE_WEB_STORAGE_BUCKET=
+FIREBASE_WEB_MEASUREMENT_ID=
+
+# ===== FIREBASE ANDROID =====
+FIREBASE_ANDROID_API_KEY=
+FIREBASE_ANDROID_APP_ID=
+FIREBASE_ANDROID_MESSAGING_SENDER_ID=
+FIREBASE_ANDROID_PROJECT_ID=
+FIREBASE_ANDROID_STORAGE_BUCKET=
+
+# ===== FIREBASE IOS =====
+FIREBASE_IOS_API_KEY=
+FIREBASE_IOS_APP_ID=
+FIREBASE_IOS_MESSAGING_SENDER_ID=
+FIREBASE_IOS_PROJECT_ID=
+FIREBASE_IOS_STORAGE_BUCKET=
+FIREBASE_IOS_CLIENT_ID=
+FIREBASE_IOS_BUNDLE_ID=
+
+# ===== GEMINI (IMPORTANT – REAL SECRET) =====
+GEMINI_API_KEY=your_real_gemini_key_here
+```
+
+---
+
 # 📦 Production Build Notes
 
 Release APK:
