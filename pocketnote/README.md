@@ -220,7 +220,7 @@ Implemented:
 
 ---
 
-# Firebase Build Configuration
+# 🔥 Firebase Build Configuration
 
 - Create firebase project and enable the required Firebase services (Authentication, Firestore and Firebase AI Logic) in your Firebase console and set up the appropriate configurations for needed platform (Prefer Android) to ensure proper functionality of the app.
 
